@@ -1,0 +1,17 @@
+1. sqlite
+ 설치 : sudo apt-get install sqlite3 libsqlite3-dev
+ 실행 : sqlite3 ./src/main/resources/data.db
+ 종료 : .quit
+ 	
+2. Sqlite-web Tool
+ 설치
+ 	sudo apt-get install python-pip ## pip를 이미 설치하였다면 skip
+ 	sudo pip install --upgrade pip  ## pip 업그레이드
+ 	sudo pip install sqlite-web     ## sqlite-web 설치
+ 실행
+	sqlite_web -p 80 -H 0.0.0.0 ./src/main/resources/data.db
+	http://ghwlstm83.run.goorm.io:80
+
+ - 참고 : https://github.com/coleifer/sqlite-web
+         http://html5around.com/wordpress/tutorials/%EC%9A%B0%EB%B6%84%ED%88%ACubuntu%EC%97%90-sqlite3-%EC%84%A4%EC%B9%98%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/
+         
